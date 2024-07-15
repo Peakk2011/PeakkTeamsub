@@ -1,0 +1,257 @@
+* {
+    transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    color: #eee;
+}
+
+body {
+    background-color: #111;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #0f0f0f;
+    border-bottom: solid 1px #222;
+    user-select: none;
+}
+
+.Navbar {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.NavbarText {
+    display: flex;
+    align-items: center;
+}
+
+.NavbarText img {
+    width: 100px;
+    height: 65px;
+    object-fit: contain;
+    transform: translate(10px, -0px);
+}
+
+.NavbarText h1 {
+    color: #ffffe9;
+    font-family: Segoe Ui Variable;
+    font-weight: 400;
+    transform: translate(-20px, -1px);
+    font-size: 22px;
+}
+
+.NavbarLinks {
+    display: flex;
+    align-items: center;
+}
+
+.NavbarLinks li a {
+    color: #ffffe9;
+}
+
+.NavbarMainLinks {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 2px;
+}
+
+.NavbarMainLinks li,
+.NavbarMainLinks li a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+/* .NavbarMainLinks:focus {
+    color: #000;
+} */
+
+.NavbarMainLinks li a:active,
+.NavbarMainLinks li a:focus {
+    color: #000;
+    background-color: #ffffe9;
+
+}
+
+.NavbarLinks li a ion-icon {
+    font-size: 22px;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    transform: translateX(7px);
+}
+
+#Lang {
+    transform: translateX(1.7px);
+}
+
+#IncludeNav li a {
+    padding: 0.45em 1.5rem;
+    background-color: #ffffe9;
+    color: #000;
+    border-radius: 4px;
+    font-weight: 400;
+    -webkit-text-stroke-width: 0.1px;
+    margin-left: 0.9rem;
+}
+
+/* feedback */
+
+.FeedbackForm {
+    height: 50dvh;
+    width: 100dvw;
+    background-color: #0f0f0f;
+    border-bottom: solid 1px #222;
+}
+
+.FeedbackContent {
+    max-width: 1000px;
+    margin: 0 auto;
+    transform: translateY(100px);
+}
+
+.FeedbackContent h1 {
+    color: #ffffe9;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.Form {
+    display: block;
+}
+
+#Name,
+#Feedback,
+#Problem,
+#SubmitForm {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    /* border-radius: 4px; */
+    border: none;
+    background-color: #070707;
+}
+
+#Name:focus,
+#Feedback:focus,
+#Problem:focus {
+    border: none;
+    outline: none;
+    border-bottom: solid 1px #ffffe9;
+}
+
+#Name::placeholder,
+#Feedback::placeholder,
+#Problem::placeholder {
+    color: #ffffe9;
+}
+
+#SubmitForm {
+    color: #ffffe9;
+    /* background-color: #111111; */
+}
+
+#SubmitForm:focus {
+    border: none;
+    outline: none;
+    scale: 90%;
+    filter: blur(2px);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media screen and (max-width: 1140px) {
+    .Navbar {
+        max-width: 900px;
+    }
+    .FeedbackContent {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 945px) {
+    .Navbar {
+        max-width: 700px;
+    }
+    .FeedbackContent {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Navbar {
+        max-width: 600px;
+    }
+    .FeedbackContent {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 711px) {
+    .Navbar {
+        max-width: 400px;
+    }
+
+    #IncludeNav {
+        display: none;
+    }
+
+    .NavbarText img {
+        width: 69px;
+        /* height: 65px; */
+        /* object-fit: contain; */
+        transform: translate(0px, -0px);
+    }
+
+    .NavbarText h1 {
+        display: none;
+    }
+    .FeedbackContent {
+        max-width: 400px;
+    }
+    .FeedbackForm {
+        background-color: transparent;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Navbar {
+        max-width: 320px;
+    }
+
+    #IncludeNav {
+        display: none;
+    }
+
+    .NavbarText img {
+        width: 69px;
+        /* height: 65px; */
+        /* object-fit: contain; */
+        transform: translate(0px, -0px);
+    }
+
+    .NavbarText h1 {
+        display: none;
+    }
+    .FeedbackContent {
+        max-width: 320px;
+    }
+    .FeedbackForm {
+        background-color: transparent;
+        border: none;
+    }
+}
